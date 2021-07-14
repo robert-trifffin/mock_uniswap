@@ -15,7 +15,9 @@ contract TK0 is ERC20Burnable, Operator {
     constructor() ERC20('TK0', 'TK0') {
         // Mints 1 Basis Cash to contract creator for initial Uniswap oracle deployment.
         // Will be burned after oracle deployment
-        _mint(_msgSender(), 100 * 10**18);
+        //_mint(_msgSender(), 100 * 10**18);
+        _mint(address(0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1), 100 * 10**18);
+        _mint(address(0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0), 100 * 10**18);
     }
 
     /**
