@@ -20,3 +20,11 @@ ganache에 배포하도록 설정하면  늘 고정적인 컨트렉트 주소를
 이렇게 컨트렉트를 만들었어도, 실제 컨트렉트를 호출하기 위해서는 dapp과 지갑이 필요합니다.
 uniswap frontend는 metamask를 연결하여 유니스왑 컨트렉트를 호출하는 것을 도와주고,
 결과값을 디스플레이 합니다.
+
+### Test scenario
+1. 2개의 ERC20 토큰을 배포한다.
+2. 유니스왑(Exchange) 컨트렉트를 배포한다
+3. metamask를 localhost로 설정하고 ganache에서 제공한 privatekey를 사용하여 토큰이 제대로 보이는지 확인한다.
+4. 유니스왑 dapp을 실행하여 pair를 만든다
+5. dapp에 유동성을 제공하기 위해 approve를 각 토큰마다 호출하고, liquidity를 제공한다.
+6. Liquidity를 제거하거나 토큰간 교환을 시도해본다
